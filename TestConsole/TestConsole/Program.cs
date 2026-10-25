@@ -5,7 +5,11 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
-            Console.WriteLine(Program.Add(3, 4));
+            Console.WriteLine("Enter number 1");
+            int.TryParse(Console.ReadLine(), out int a);
+            Console.WriteLine("Enter number 2");
+            int.TryParse(Console.ReadLine(), out int b);
+            Console.WriteLine(Program.Add(a, b));
         }
         public static int Add(int a, int b)
         {
